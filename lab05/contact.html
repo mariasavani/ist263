@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+     <meta charset="utf-8">
+     <title>Contact</title>
+    </head>
+    
+    <body>
+        <h1>Contact</h1>
+
+            <p>901 Walnut Ave 
+            <br> Syracuse, NY 13210</p>
+   
+            <p>
+        <a href="mailto:mmsavani@syr.edu">Maria Savani Email</a>
+            </p>
+        <br>
+            <p>
+        <a href="https://www.linkedin.com/in/maria-savani/" target="_blank"><img src="../images/LI-Logo.png" alt= "https://www.linkedin.com/in/maria-savani/"></a>
+   
+            <a href="https://www.linkedin.com/in/maria-savani/">My LinkedIn Profile</a>
+        </p>  
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.822867082471!2d-76.13195934919203!3d43.04515827904449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3099ab584bb%3A0x677b99c828ca422d!2s1104%20Madison%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1631813787356!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <form action="mailto:mmsavani@syr.edu" method="post">
+
+        <label for= "fullname" >Enter Name:</label>
+        <input type="text" id="fullname" name="fname">
+     <br> 
+        <label for="TellUsAboutyourself">Tell Us About Yourself</label>
+            
+    <br>
+        <textarea id="AboutYou" name="About You">Tell us About You Here.</textarea>
+      <br>
+      <!--Radio buttons are linked together using the same value for name 
+    all the labels for attribute value must be unique-->
+        <p>Do You Know Me Personally?</p>
+        <input type="radio" id="Yes1" name="Yes" value="Very Well"> 
+        <label for="Yes1">Very Well</label> 
+
+        <input type="radio" id="kindof2" name="Kind of" value="Kind of Well">
+        <label for="kindof2">Kind of Well</label>
+      
+         <label for="notverywell3">Not very Well</label> 
+         <input type="radio" id="notverywell3" name="Not Very Well" value="Not Verey Well">
+    <br>
+         <label for="contactmethod"> How would you like to be contacted?</label>
+        <select id="contactmethod" name="contactmethod">
+                <option value="phone">Phone</option>
+                <option value="Email">Email</option>
+                <option value="snailmail">Snail Mail</option>
+
+
+        </select>
+      <br>
+        <input type="submit" value="Send My Message">
+
+    </form>
+    </body>
+</html>
