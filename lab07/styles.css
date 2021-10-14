@@ -7,12 +7,14 @@ h1 {font-family: 2em;}
 
 evenrows {background-color:darkgray;}
 nav{
-Color: #ECE7B4
-selector= nav
-property=padding
-value=10px
+Color: #ECE7B4;
+padding:15px;
+margin: bottom 30px;
 }
-nav a {color:#406343 }
-nav a:hover{color:#F3EFCC}
+nav a {color:#406343;
+        padding: 15px;
+         margin: bottom 30px;
+}
+nav a:hover{color:#F3EFCC;}
 
 
