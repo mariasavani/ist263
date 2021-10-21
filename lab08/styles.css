@@ -31,7 +31,7 @@ nav a:hover{color:#F3EFCC;}
     .clear {clear:both;}
     .Address {margin-bottom: 20px;}
     .Address {float:right; padding-right:70%; margin: left 50px; ;clear:both; background-color: #cce5ff; border-radius: 2em;}
-
+   .contact {float:left;}
 
 
     .map {float: right; clear: both; order: 2; margin-left: 10px;}
