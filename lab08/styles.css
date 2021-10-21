@@ -30,8 +30,8 @@ nav a:hover{color:#F3EFCC;}
 
     .clear {clear:both;}
     .Address {margin-bottom: 20px;}
-    .Address {float:left; background-color: #cce5ff; border-radius: 5em; margin-right: 60px;}
-   .contact {float:right; margin-bottom: 50px; margin-right: 100px;}
+    .Address {float:left; background-color: #cce5ff; border-radius: 5em; margin-right: 10px;}
+   .contact {float:right; margin-bottom: 50px; margin-right: 10px;}
 
 
     .map {float: right; clear: both; order: 2; margin-left: 10px;}
