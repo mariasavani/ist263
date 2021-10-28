@@ -4,12 +4,25 @@
     <head>
      <meta charset="utf-8">
      <title>Front End Web Development</title>
-     <link rel="stylesheet" href="../lab08/styles.css">
+     <link rel="stylesheet" href="../lab09/styles.css">
      <style>
          table, th, td {border: 1px solid black;}
     
          .evenrows{background-color:darkgray;}
-         
+        h1 {text-align:center;}
+        img {width:60px}
+        .firstrow {display:flex;} /*puts children containers in colums*/ 
+           .firstrow, .secondrow {display:flex;}
+
+           .firstrow div{ flex:1;} /* defines ratio of page this colum takes up */
+           .social {flex-basis: 20%;}
+           .copyright {flex-basis: 40%;}
+           .boiler {flex-basis: 40%;}
+           a {color:#c9cbd0;}
+           .secondrow {background-color:blanchedalmond;
+            border:3px solid black;
+            padding:15px; 
+            margin: 40px;}
      </style>
     </head>
      
@@ -19,25 +32,74 @@
             <a href= "../lab07/skills.html">Skills</a> |
             <a href= "../lab07/contact.html">Contact</a>
         </nav>
-     <table>
+    <h1> Technical Skills</h1>
+    <p> My Skills are unique, but not complex. My skills are useful in many ways, and modes of life. Here are my skills. </p>
+    <div class="firstrow">
+    <div class="interpersonal">
+        <img src= "../images/interpersonal.png"> 
+        <br> <p> Interpersonal</p>
+     </div>
+     <div class="organized">
+
+        <img src= "../images/organized.png">    
+        <br> 
+        <p>organized</p>
+    </div>  
+    <div class="creative">
+        <img src= "../images/creative.png">
+        <br>
+        <p>creative</p>
+    </div>
+    <div class="positive">
+        <img src= "../images/positive.png">
+        <br>
+        <p>Positive</p>
+    </div>
+    <div class= "html">
+        <img src= "../images/html.png">
+        <br>
+        <p>html</p>
+    </div> 
+    </div>
+
+    <div class= "secondrow">
+       <h2> Other Skills</h2>
+       <p> Microsft Teams <br> 
+        Photoshop <br>
+        Micrsoft Word <br>
+        Slack <br>
+        Information Managment technology
+        </p>
+
+
+
+
+
+
+
+
+    </div>
+
+    <!--
+    <table>
             <caption>Maria's Monthly Spending Table</caption>
             <tr class="evenrows">
-              <td>Starbucks</td>
-              <td>Chipotle</td>
-              <td>5 Guys</td>
-              <td>Dunkin</td>
+              <td>Category</td>
+              <td>Skills</td>
+              <td>Competancy Level</td>
+              <td>Comfort</td>
              
             </tr>
             <tr>
-              <td>$20</td>
-              <td>$10</td>
-              <td>$12</td>
-              <td>$5</td>
+              <td>Coding</td>
+              <td>HTML</td>
+              <td>some Experience</td>
+              <td>so so</td>
             
             </tr>
            
             <tr class="evenrows">
-                <td>$8</td>
+                <td>$5</td>
                 <td>$9</td>
                 <td>$6</td>
                 <td>$9</td>
@@ -94,5 +156,6 @@
                    
                 </tr>
             </table>
+            --->
     </body>
 </html>
