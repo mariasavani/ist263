@@ -14,8 +14,10 @@ margin: bottom 30px;
 nav a {color:#406343;
         padding: 15px;
          margin: bottom 30px;
+         background-color:#ECE7B4;
 }
-nav a:hover{color:#F3EFCC;}
+nav a:hover{color:#F3EFCC;
+  }
 
 
 .footer {float: right; margin-left: 10px;}

@@ -11,10 +11,13 @@
          .evenrows{background-color:darkgray;}
         h1 {text-align:center;}
         img {width:60px}
+        
         .firstrow {display:flex;} /*puts children containers in colums*/ 
-           .firstrow, .secondrow {display:flex;}
 
-           .firstrow div{ flex:1;} /* defines ratio of page this colum takes up */
+           .firstrow div{ flex:1;
+            padding:15px; 
+            margin: 20px;}
+        } /* defines ratio of page this colum takes up */
            .social {flex-basis: 20%;}
            .copyright {flex-basis: 40%;}
            .boiler {flex-basis: 40%;}
@@ -22,7 +25,9 @@
            .secondrow {background-color:blanchedalmond;
             border:3px solid black;
             padding:15px; 
-            margin: 40px;}
+            margin: 20px;}
+            .flexbox2 {Display:flex;
+                    justify-content: right;}
      </style>
     </head>
      
@@ -34,6 +39,7 @@
         </nav>
     <h1> Technical Skills</h1>
     <p> My Skills are unique, but not complex. My skills are useful in many ways, and modes of life. Here are my skills. </p>
+   <div class="flexbox2">
     <div class="firstrow">
     <div class="interpersonal">
         <img src= "../images/interpersonal.png"> 
@@ -70,12 +76,7 @@
         Slack <br>
         Information Managment technology
         </p>
-
-
-
-
-
-
+    </div>
 
 
     </div>
