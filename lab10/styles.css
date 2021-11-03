@@ -28,7 +28,7 @@ nav a:hover{color:#F3EFCC;
    
   .bar {display:flex;}
   .bar {padding:10px;}
-  .bar {flex: 2; background-color:#cce5ff;border-radius: 3em;margin-right: 30px;}
+  .bar {flex: 2; background-color:#cce5ff;border-radius: 2em;margin-right: 20px;}
 
     .clear {clear:both;}
     .Address {margin-bottom: 20px;}
