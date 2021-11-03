@@ -36,7 +36,7 @@ nav a:hover{color:#F3EFCC;
    .contact {float:right; margin-bottom: 50px; margin-right: 30px;}
 
 
-    .map {float: right; clear: both; order: 2; margin-left: 10px;}
+    .map {float: right; clear: both; order: 2; margin-left: 10px; flex-wrap: wrap;}
 
     .formmap {display: flex;}
      .formmap {padding: 20px;}
