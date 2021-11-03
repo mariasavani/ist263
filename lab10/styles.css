@@ -38,7 +38,7 @@ nav a:hover{color:#F3EFCC;
 
     .map {float: right; clear: both; order: 2; margin-left: 10px; flex-wrap: wrap;}
 
-    .map {display: flex;}
-     .map {padding: 20px;}
-     .map {flex: 2; background-color: #cce5ff; border-radius: 3em; margin-right: 30px;}
+    .formmap {display: flex;}
+     .formmap {padding: 20px;}
+     .formmap {flex: 2; background-color: #cce5ff; border-radius: 3em; margin-right: 30px;}
      .cuc {max-width:100%;}
