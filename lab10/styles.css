@@ -46,4 +46,5 @@ nav a:hover{color:#F3EFCC;
      @media only screen and (max-width: 900px) 
      { 
     .all { display:block;}
+    span {display: none;}
      }
