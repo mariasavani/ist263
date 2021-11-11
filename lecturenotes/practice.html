@@ -7,25 +7,35 @@
     <title>Document</title>
 
     <Style>
+    body {background-color:red;}
+    .clear {clear:both;}
     .animals{
-        font-family:monospace; font-size:1em;
+        font-family:monospace; font-size:2em;
     background-color: rgb(214, 50, 186);
  border-radius:3px;
 border-color: blue;
     padding: 30px;
     flex-wrap: wrap;
     display:flex;
-justify-content: space-around; clear: both;}
+    flex: 3; 
+justify-content:space-evenly; clear: both; flex-wrap: wrap;}
 
 .clear {clear:both;}
 .taco {float:right; background-color: cadetblue; padding:10px; border-radius: 20px;}
     
-    .cow { float:right; width: 30%;  }
-@media only screen and (max-width 1000px)
-{ 
-    .animal {background-color:palevioletred;}
-    .taco {background-color: purple;
-    display: none;} }
+    .cow { float:right; width: 30%;margin-top: 30px; margin-bottom: 30px; }
+@media only screen and (max-width 1200px)
+{ nav a{ display:block; margin:50px;}
+span {display:none;}
+}
+
+
+}
+     
+    nav a:hover{color:black;}
+    nav a:active{color:aquamarine;}
+
+.me {background-color:cadetblue;display: flex; flex-basis:30em; justify-content: space-evenly;}
     </style> 
 </head>
 
@@ -35,7 +45,6 @@ justify-content: space-around; clear: both;}
         <a href= "../lab10/index.html"> Index </a> <span>|</span>
         
     </nav>
-
     <div class="animals">
     <div class="dog">my dog is cute</div>
     <br>
@@ -45,14 +54,22 @@ justify-content: space-around; clear: both;}
     <br>
     <div class="bird"> my bird is cute</div>
 </div>
-<div class="clear"></div>
+
 
 <div class= "taco">I love tacos</div>
 
 <div class="text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
-
+<div class= "clear"></div>
 <img class = "cow" src ="../images/th.jpeg" alt="cow">
-
+<div class= "clear"></div>
 <div class="text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
+
+<div class="me">
+
+<div> I am cool </div>
+<div> I am smart</div>
+<div> I am worthy</div>
+
+</div>
 </body>
 </html>
