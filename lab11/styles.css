@@ -40,7 +40,7 @@ nav a:hover{color:black;
      .formmap {padding: 20px;}
      .formmap {flex-wrap:wrap; background-color: #cce5ff; border-radius: 3em; margin-right: 30px;}
 
-     .cuc {max-width:100%;}
+     .cuc {max-width:100%; text-align:center;}
 
      @media only screen and (max-width: 900px) 
      { 
