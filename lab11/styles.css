@@ -52,9 +52,10 @@ nav a:hover{color:black;
      #skip {
       position: absolute; /*  relative to parent container  */
       left: -999px; /* move if off the page*/
-    color: #00000;
+    color: black;
       font-size: 800%;
   }
 
   #skip:focus {
-      left:10px;}
+      left:10px;
+    color: black;}
