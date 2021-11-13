@@ -53,7 +53,7 @@ nav a:hover{color:black;
       position: absolute; /*  relative to parent container  */
       left: -999px; /* move if off the page*/
     color:black;
-      font-size: medium;
+      font-size: 50%;
   }
 
   #skip:focus {
