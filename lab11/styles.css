@@ -52,7 +52,8 @@ nav a:hover{color:black;
      #skip {
       position: absolute; /*  relative to parent container  */
       left: -999px; /* move if off the page*/
-      background-color: rgb(0, 0, 0);
+    color:black;
+      background-color:white;
   }
 
   #skip:focus {
