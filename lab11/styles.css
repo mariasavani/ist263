@@ -52,3 +52,12 @@ nav a:hover{color:#F3EFCC;
  nav a{ display:block; margin-bottom: 20px;}
     span {display: none;}
      }
+
+     #skip {
+      position: absolute; /*  relative to parent container  */
+      left: -999px; /* move if off the page*/
+      background-color: rgb(0, 225, 254);
+  }
+
+  #skip:focus {
+      left:10px;}
