@@ -54,6 +54,7 @@ nav a:hover{color:black;
       left: -999px; /* move if off the page*/
     color:black;
       background-color:white;
+      font-size: medium;
   }
 
   #skip:focus {
