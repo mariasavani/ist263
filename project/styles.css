@@ -1,0 +1,66 @@
+nav{
+    padding:15px;
+    margin: bottom 30px;
+    }
+    nav a {color:#272343;
+            padding: 15px;
+             margin: bottom 30px;
+             background-color:#bae8e8;
+             border:1px solid #272343;
+    }
+    nav a:hover{color:#ffff;
+      }
+    
+body {background-color:#e3f6f5;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #272343;
+
+}
+h1 {
+    color: #272343;
+    text-align: center; 
+    border-radius: 1em;
+}
+
+h2, h3 {
+    color: #272343;
+    text-align: center; 
+}
+.banner {
+    max-width: 100%;
+    display:flex;
+    justify-content:center;
+}
+
+.introfood   {
+        color: #272343;
+        background-color:#bae8e8;;
+        border:3px solid #272343;
+        padding:15px; 
+        margin: 10px;
+        border-radius: 2em;
+    }
+
+.bio {
+    color: #272343;
+    background-color:#bae8e8;;
+    border:3px solid #272343;
+    padding:15px; 
+    margin: 10px;
+    border-radius: 2em;
+
+}
+.self {
+display: flex;
+justify-content: center;
+}
+
+.dishes { max-width: 60%;}
+.tomatoe {max-width: 60%;}
+.women {max-width: 60%;}
+.row { display:flex;
+        justify-content:center;
+        border-radius: 2em;}
+
+  
+
