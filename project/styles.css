@@ -20,9 +20,13 @@ h1 {
     color: #272343;
     text-align: center; 
     border-radius: 1em;
+    padding:15px; 
+    margin: 10px;
+    border-radius: 2em;
+
 }
 
-h2, h3 {
+h1,h2, h3 {
     color: #272343;
     text-align: center; 
 }
@@ -52,7 +56,7 @@ h2, h3 {
 }
 .self {
 display: flex;
-justify-content: center;
+justify-content: right;
 }
 
 .dishes { max-width: 60%;}
