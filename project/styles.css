@@ -71,3 +71,17 @@ justify-content: right;
         }
 
 
+.quote {text-align:center;}
+
+#skip {
+    position: absolute; /*  relative to parent container  */
+    left: -999px; /* move if off the page*/
+  color: #272343;
+    font-size: 100%;
+    background-color:#bae8e8;
+    padding: 15px;
+}
+
+#skip:focus {
+    left:10px;
+  color: #272343;}
