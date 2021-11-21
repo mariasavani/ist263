@@ -65,6 +65,9 @@ justify-content: right;
 .row { display:flex;
         justify-content:center;
         border-radius: 2em;}
+        .cafe eiles {
+            display:flex;
+            justify-content: center;
+        }
 
-  
 
