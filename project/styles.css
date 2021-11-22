@@ -60,7 +60,7 @@ h1,h2, h3 {
 
 }
 .self {
-float: center;
+float: center;margin-left: 10px;
 }
 
 .dishes { max-width: 60%;}
@@ -89,4 +89,4 @@ float: center;
 #skip:focus {
     left:10px;
   color: #272343;}
-  .copyright {float:left; margin-left: 10px}
+  .copyright {float:lefts; margin-left: 10px}
