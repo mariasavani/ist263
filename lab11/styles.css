@@ -22,7 +22,7 @@ nav a:hover{color:black;
 
 .head {float: left;}
 .quote {float:right;}
-.copyright {float:left; margin-left: 10px}
+.copyright {float:center; margin-left: 10px}
    
   .bar {display:flex;}
   .bar {padding:10px;}
