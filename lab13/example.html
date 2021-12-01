@@ -22,11 +22,25 @@
         #mercurythumb, #venusthumb, #earththumb, #marsthumb, #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb 
         {width: 100px;}
        #planetsminusmec, #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo {display:none;}
-       #mercurypic {float: clear;}
-       #mercuryinfo {float: right;}
+
+       #planetinfo {float: right; clear: both;}
     </style>
     <script>
+      function PlanetsOff() {  document.getElementById('mercury').style.display = 'none'; }
+      
+      function PlanetsOff() { document.getElementById('venus').style.display = 'none';}
+      
+      function PlanetsOff() { document.getElementById('earth').style.display = 'none';}
+      
+      function PlanetsOff() { document.getElementById('mars').style.display = 'none';}
+      
+      function PlanetsOff() { document.getElementById('jupiter').style.display = 'none';}
        
+      function PlanetsOff() { document.getElementById('saturn').style.display = 'none';}
+       
+      function PlanetsOff() { document.getElementById('uranus').style.display = 'none';}
+       
+      function PlanetsOff() { document.getElementById('neptune').style.display = 'none';}
     </script>
 </head>
 <body>
@@ -41,7 +55,7 @@
         <img src="https://laferger.github.io/ist263/images/saturn.jpg" alt="saturn" id="saturn">
         <img src="https://laferger.github.io/ist263/images/uranus.jpg" alt="uranus" id="uranus">
         <img src="https://laferger.github.io/ist263/images/neptune.jpg" alt="neptune" id="neptune">
-    </Div>
+    </div>
     </div>
     <div id="planetinfo">        
         <h1>Planets Slideshow</h1>
@@ -80,7 +94,6 @@
     </div>
     <div id="thumbnails">
         <img src="https://laferger.github.io/ist263/images/mecury.jpg" alt="mercury" id="mercurythumb">
-       
         <img src="https://laferger.github.io/ist263/images/venus.jpg" alt="venus" id="venusthumb">
         <img src="https://laferger.github.io/ist263/images/earth.jpg" alt="earth" id="earththumb">
         <img src="https://laferger.github.io/ist263/images/mars.jpg" alt="mars" id="marsthumb">
