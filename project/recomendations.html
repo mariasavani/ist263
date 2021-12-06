@@ -5,16 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culinary Exploration</title>
     <link rel="stylesheet" href="../project/styles.css">
+    <style>
+        slideshow-container{ width: 1200px;
+                    margin:auto;}
+#bigimages {margin-right:100px;float:left;}
+
+#thumbnails { margin: auto; padding-top:20px; display:flex; justify-content: space-between;}
+
+#austriathumb, #belgiumthumb, #canadathumb, #englandthumb, #finlandthumb, #australiathumb, #hungarythumb, #italythumb, #japanthumb, #polandthumb, #africathumb { max-width:100%;} 
+
+ #belgiuminfo, #canadainfo, #englandinfo, #finlandinfo, #australiainfo, #hungaryinfo, #italyinfo, #japaninfo, #polandinfo, #africainfo { display:none;}
+
+ #moules, #poutine, #steak-and-kidney, #squeaky-cheese, #steak-pie, #goulash, #olives, #ramen, #chlodnik, #biltong { max-width: 100%; display:none;}
+
+.clear{clear:both;}
+    </style>
     <script>
         function TurnNavOnOff () {
-                        if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+             if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
                             document.getElementById("navlinks").style.display = "none";
                         }
-                        else {
-                            document.getElementById("navlinks").style.display = "block";
+            else {
+                        document.getElementById("navlinks").style.display = "block";
                         }
                     }
+    function FoodOff () {
+    document.getElementById ('austriainfo').style.display= 'none';
+    document.getElementById ('belgiuminfo').style.display= 'none';
+    document.getElementById ('canadainfo').style.display= 'none';
+    document.getElementById ('englandinfo').style.display= 'none';
+    document.getElementById ('finlandinfo').style.display= 'none';
+    document.getElementById ('australiainfo').style.display= 'none';
+    document.getElementById ('hungaryinfo').style.display= 'none';
+    document.getElementById ('italyinfo').style.display= 'none';
+    document.getElementById ('japaninfo').style.display= 'none';
+    document.getElementById ('polandinfo').style.display= 'none';
+    document.getElementById ('africainfo').style.display= 'none';
 
+    document.getElementById ('apfelstrudle').style.display= 'none';
+    document.getElementById ('moules').style.display= 'none';
+    document.getElementById ('poutine').style.display= 'none';
+    document.getElementById ('steak-and-kidney').style.display= 'none';
+    document.getElementById ('squeaky-cheese').style.display= 'none';
+    document.getElementById ('steak-pie').style.display= 'none';
+    document.getElementById ('goulash').style.display= 'none';
+    document.getElementById ('olives').style.display= 'none';
+    document.getElementById ('ramen').style.display= 'none';
+    document.getElementById ('chlodnik').style.display= 'none';
+    document.getElementById ('biltong').style.display= 'none';
+                    }
+
+                
+function AustriaOn () { 
+        document.getElementById('apfelstrudle').style.display='block';
+        document.getElementById('austriainfo').style.display='block';
+}
+function BelgiumOn () { 
+        document.getElementById('moules').style.display='block';
+        document.getElementById('belgiuminfo').style.display='block';
+}
+function CanadaOn () { 
+        document.getElementById('poutine').style.display='block';
+        document.getElementById('canadainfo').style.display='block';
+}
+function EnglandOn () { 
+        document.getElementById('steak-and-kidney').style.display='block';
+        document.getElementById('englandinfo').style.display='block';
+}
+function FinlandOn () { 
+        document.getElementById('squeaky-cheese').style.display='block';
+        document.getElementById('finlandinfo').style.display='block';
+}
+function AustraliaOn () { 
+        document.getElementById('steak-pie').style.display='block';
+        document.getElementById('australiainfo').style.display='block';
+}
+function HungaryOn () { 
+        document.getElementById('goulash').style.display='block';
+        document.getElementById('hungaryinfo').style.display='block';
+}
+function ItalyOn () { 
+        document.getElementById('olives').style.display='block';
+        document.getElementById('italyinfo').style.display='block';
+}
+function JapanOn () { 
+        document.getElementById('ramen').style.display='block';
+        document.getElementById('japaninfo').style.display='block';
+}
+function PolandOn () { 
+        document.getElementById('chlodnik').style.display='block';
+        document.getElementById('polandinfo').style.display='block';
+}
+function AfricaOn () { 
+        document.getElementById('biltong').style.display='block';
+        document.getElementById('africainfo').style.display='block';
+}   
          </script> 
 </head>
 <body>
@@ -27,117 +112,103 @@
             <a href="../project/recomendations.html">Recomendations</a>
 </div>
 </nav>
-    <h1>Our Resturant Recomendations</h1>
+    <h1>Resturant Recomendations</h1>
 
 <main>
+<div id="bigimages">
+    <img src="../project/images/cafe.jpg" alt= "cafe" id="apfelstrudle">
+    <img src="../project/images/Chez.jpg" alt= "chez" id="moules">
+    <img src="../project/images/Fritz.jpg" alt= "fry house" id="poutine">
+    <img src="../project/images/HEFT.jpg" alt= "heft" id="steak-and-kidney">
+    <img src="../project/images/saaga.jpg" alt= "sasga" id="squeaky-cheese">
+    <img src="../project/images/Beefys.jpg" alt= "Beefy's Aussie World" id="steak-pie">
+    <img src="../project/images/getto.jpg" alt= "Gettó Gulyás" id="goulash">
+    <img src="../project/images/olives.jpg" alt= "Migliori Olive Ascolane" id="olives">
+    <img src="../project/images/sabo.jpg" alt= "sabo" id="ramen">
+    <img src="../project/images/thumbnail.jpg" alt= "Pasja Smaku" id="chlodnik">
+    <img src="../project/images/africa.jpg" alt= "Die Biltong Padstal" id="biltong">
+
+    </div>
 
 <a id="maincontent"></a>
+
+
+<div id= "austriainfo">
     <h2>Café Eiles</h2>  
-    <div class= "cafe eiles"> 
-    <img src="../project/images/cafe.jpg" alt= "cafe">
-        <br>
-    When in Austria stop by Café Eiles Cafe, Austrian for some Apfelstrudel! 
-        <br> 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.8561947014628!2d16.352616815651533!3d48.20938577922922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d0794431ef599%3A0x73b00900bce6702c!2sCaf%C3%A9%20Eiles!5e0!3m2!1sen!2sus!4v1636399287889!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-    </div>
-<br>
-   
+        <p>When in Austria stop by Café Eiles Cafe, Austrian for some Apfelstrudel! </p> 
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.8561947014628!2d16.352616815651533!3d48.20938577922922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d0794431ef599%3A0x73b00900bce6702c!2sCaf%C3%A9%20Eiles!5e0!3m2!1sen!2sus!4v1636399287889!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+ </div>
+
+<div id="belgiuminfo">
     <h2>Chez Léon</h2>
-    <div class="chez">
-    <img src="../project/images/Chez.jpg" alt= "chez">
-         <br> 
-     IF you are in Belgium be sure to grab some Moules Frites at Chez Leon. Brussels, Belgium. 
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.077404726868!2d4.351844215631282!3d50.84825087953215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38098bbbd05%3A0xa314d5d5db2f512c!2sChez%20L%C3%A9on!5e0!3m2!1sen!2sus!4v1636399327077!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
- <br>
-    
-    <h2>Fritz European Fry House</h2>
-    <div class="fry house"> 
-     <img src="../project/images/Fritz.jpg" alt= "fry house">
-        <br>  
-    Get yourself some delicious Poutine at Fritz European Fry House in Vancouver, British Columbia. <br>
+If you are in Belgium be sure to grab some Moules Frites at Chez Leon. Brussels, Belgium. 
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.077404726868!2d4.351844215631282!3d50.84825087953215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38098bbbd05%3A0xa314d5d5db2f512c!2sChez%20L%C3%A9on!5e0!3m2!1sen!2sus!4v1636399327077!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+ </div>
+
+<div id="canadainfo">
+    <h2>Fritz European Fry House</h2> 
+   Get yourself some delicious Poutine at Fritz European Fry House in Vancouver, British Columbia.
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.9518187912513!2d-123.12887728431072!3d49.27731017933074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673d46c5a6707%3A0x349d349c0326e5f2!2sFritz%20European%20Fry%20House!5e0!3m2!1sen!2sus!4v1636399229610!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-<br>
-    
+</div>
+<div id="englandinfo"></div>
     <h2>Heft</h2>
-    <div class="heft"> 
-    <img src="../project/images/HEFT.jpg" alt= "HEFT">
-     <br>  
-    Want the full England experience? Stop by Heft, Lake District for some Steak and kidney pie! <br>
-
+    Want the full England experience? Stop by Heft, Lake District for some Steak and kidney pie! 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2331.691028426216!2d-2.9210553842337754!3d54.23865678017565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487c9794fab02977%3A0x53c24ded8a2ca06e!2sHeft!5e0!3m2!1sen!2sus!4v1636399376728!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-    </div>
-<br>
-   
+ </div>
+ <div id="finlandinfo">
    <h2>Restaurant Saaga</h2>
-   <di class="saaga"> 
-    <img src="../project/images/saaga.jpg" alt= "sasga">
- <br> 
-    If you want a true taste of Finland stop by Restaurant Saaga for some “squeeky cheese“ AKA
-    Leipäjuusto. 
- <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.0765017211775!2d24.931216416015843!3d60.16291238195826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bb57fffd5d7%3A0xf1cec0a2f32690a1!2sRestaurant%20Saaga!5e0!3m2!1sen!2sus!4v1636399396963!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-<br>
-
+   If you want a true taste of Finland stop by Restaurant Saaga for some “squeeky cheese“ also known as Leipäjuusto.
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.0765017211775!2d24.931216416015843!3d60.16291238195826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bb57fffd5d7%3A0xf1cec0a2f32690a1!2sRestaurant%20Saaga!5e0!3m2!1sen!2sus!4v1636399396963!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>       
+ </div>
+ <div id= "australiainfo">
     <h2>Beefy's Aussie World</h2>
-    <div class="beefys"> 
-    <img src="../project/images/Beefys.jpg" alt= "Beefy's Aussie World">
-        <br> 
-    Hello Mate! You must grab s mest pie at Beefy’s when in Australia. <br>
+    Hello Mate! You must grab s mest pie at Beefy’s when in Australia.
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.782052322244!2d153.0440313150416!3d-26.751330283197277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b939c932c1a3e5d%3A0xff487378fa175705!2sBeefy&#39;s%20Aussie%20World!5e0!3m2!1sen!2sus!4v1636399201151!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-    </div>
-<br>
-   
+</div>
+<div id="hungaryinfo">
     <h2>Gettó Gulyás</h2>
-    <div class="getto">
-    <img src="../project/images/getto.jpg" alt= "Gettó Gulyás">
-    <br> 
-    Get yourself some Goulash at Gettó Gulyás, in Budapest. Hungary, you won’t be sorry. 
-    <br>
+    Get yourself some Goulash at Gettó Gulyás, in Budapest. Hungary, you won’t be sorry.
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.608709865568!2d19.060474415626764!3d47.497535579177644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc682437bf65%3A0xc2b6eb4e3531cdd4!2zR2V0dMOzIEd1bHnDoXM!5e0!3m2!1sen!2sus!4v1636399180122!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-<br>
-   
+</div>
+<div id="italyinfo">
     <h2>Migliori Olive Ascolane</h2>
-    <div class="olive">
-    <img src="../project/images/olives.jpg" alt= "Migliori Olive Ascolane">
-         <br>
-     When in Italy… don’t miss out on Migliori Olive Ascolane’s deep fried olives. A true delegacy! <br>
+     hen in Italy… don’t miss out on Migliori Olive Ascolane’s deep fried olives. A true delegacy!
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.916323880582!2d13.574490315338954!3d42.853499979156936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1331fd11cad1737d%3A0x814b05c823aa3d46!2sMigliori%20Olive%20Ascolane!5e0!3m2!1sen!2sus!4v1636399155646!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-    </div>
-<br>        `
-
-    <h3>Sobahouse Konjikihototogisu</h3>
-    <div class="sobahouse"> 
-    <img src="../project/images/sabo.jpg" alt= "sabo">
-        <br> 
-    Konjiki Hototogisu’s Ramen in Tokyo is something your taste buds won’t want to miss out on. <br>
+</div>
+<div id="japaninfo">
+    <h2>Sobahouse Konjikihototogisu</h2>
+    Konjiki Hototogisu’s Ramen in Tokyo is something your taste buds won’t want to miss out on.
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5214237790096!2d139.70610301525906!3d35.688784280192536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f324eb5d1539%3A0x53493bc1aff770b!2sSobahouse%20Konjikihototogisu!5e0!3m2!1sen!2sus!4v1636399092306!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
-        <br>
+<div id="polandinfo">
   
-    <h3>Pasja Smaku</h3>
-    <div class="smaku">
-    <img src="../project/images/thumbnail.jpg" alt= "Pasja Smaku">
-        <br>
-    You are going to want to get your hands on some Chlodnik at Pasja Smaku, in Poland. <br>
+    <h2>Pasja Smaku</h2>
+    You are going to want to get your hands on some Chlodnik at Pasja Smaku, in Poland.
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d157010.96033528436!2d16.6481888!3d52.0561291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4705adc790e2cf0d%3A0x2d71f9aada44c88f!2sPasja%20Smaku!5e0!3m2!1sen!2sus!4v1636399054894!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
-   
-    <br>
-  
-    <h3>Die Biltong Padstal</h3>
-    <div class= "padstal"> 
-    <img src="../project/images/africa.jpg" alt= "Die Biltong Padstal">
-        <br>
-    Die Biltong Padstal in South Africa has the best biltong around!  <br>
+<div id="africainfo">
+    <h2>Die Biltong Padstal</h2>
+    Die Biltong Padstal in South Africa has the best biltong around! 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8437.55851430195!2d27.95102991888879!3d-25.773022866096724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfd568ce936f65%3A0xe61565abc8ab146!2sDie%20Biltong%20Padstal!5e0!3m2!1sen!2sus!4v1636399024723!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
 </div>
+<div class="clear"> </div>
+
+<div id="thumbnails">
+<img src= "../project/images/austriaflag.png" alt="austria" id="austriathumb" onclick="FoodOff(); AustriaOn ();">
+<img src= "../project/images/belgiumflag.png" alt="belgium" id="belgiumthumb"onclick="FoodOff(); BelgiumOn ();">
+<img src= "../project/images/canadaflag.png" alt="canada" id="canadathumb" onclick="FoodOff(); CanadaOn ();">
+<img src= "../project/images/englandflag.png" alt="england" id="englandthumb"onclick="FoodOff(); EnglandOn ();">
+<img src= "../project/images/finlandflag.png" alt="finland" id="finlandthumb"onclick="FoodOff (); FinlandOn ();">
+<img src= "../project/images/australiaflag.png" alt="australia" id="australiathumb" onclick="FoodOff (); AustraliaOn ();">
+<img src= "../project/images/hungryflag.png" alt="hungary" id="hungarythumb" onclick="FoodOff();HungaryOn ();">
+<img src= "../project/images/italyflag.png" alt="italy" id="italythumb" onclick="FoodOff();ItalyOn ();">
+<img src= "../project/images/japanflag.png" alt= "japan" id="japanthumb" onclick="FoodOff(); JapanOn();">
+<img src= "../project/images/polandflag.png" alt="poland" id="polandthumb" onclick="FoodOff(); PolandOn();">
+<img src= "../project/images/africaflag.png" alt="africa" id="africathumb" onclick="FoodOff(); AfricaOn();">
+</div>
+
+</div> 
 </Main>
-</body>
 <footer>  
     <div class="copyright">
       &copy; 2020 </div> 
@@ -147,4 +218,5 @@
           ― Charles M. Schulz
       </div>
 </footer> 
+</body>
 </html>
