@@ -6,15 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Culinary exploration</title>
     <link rel="stylesheet" href="../project/styles.css">
- 
+ <script>
+function TurnNavOnOff () {
+                if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                    document.getElementById("navlinks").style.display = "none";
+                }
+                else {
+                    document.getElementById("navlinks").style.display = "block";
+                }
+            }
+
+ </script> 
+
 </head>
 <body>
     <a id="skip" href= "#maincontent"> skip to content</a>
     <nav>
-        <a href= "../project/home.html">Home</a>  <span>|</span>
-        <a href= "../project/places.html">Places</a>  <span>|</span>
-        <a href= "../project/recomendations.html">Recomendations</a>
-    </nav>
+
+        <img src="https://laferger.github.io/ist263/images/hamburger.png" width="35" onclick="TurnNavOnOff();" id="hamicon">
+       <div id="navlinks"> 
+            <a href="../project/home.html">Home</a><span>|</span>
+            <a href="../project/places.html">Places</a>  <span>|</span>
+            <a href="../project/recomendations.html">Recomendations</a>
+       </div>
+       </nav>
     <h1> Come Explore Foods from Around the World With Me!</h1>
   <div class= "banner">
     <img src="../project/images/dinner.jpeg" alt= "banner"> 

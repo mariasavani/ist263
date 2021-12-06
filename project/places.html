@@ -6,103 +6,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culinary exploration</title>
     <link rel="stylesheet" href="../project/styles.css">
+ <style>
+
+#hamicon {display: none;}
+  nav a:hover {background-color: lightseagreen;}
+  @media only screen and (max-width: 900px) {
+      span {display: none;}
+      #hamicon {display: block;}
+      nav a {
+          display: block;
+          padding: 10px 0px;
+          }
+      #navlinks {display: none;}
+  }
+slideshow-container{ width: 1200px;
+                    margin:auto;}
+#bigimages {margin-right:100px;float:left;}
+
+#planetinfo {padding: 100px;}
+
+#thumbnails { margin: auto; padding-top:20px; justify-content: center;}
+
+#austriathumb, #belgiumthumb, #canadathumb, #englandthumb, #finlandthumb, #australiathumb, #hungarythumb, #italythumb, #japanthumb, #polandthumb, #africathumb { width:100px;} 
+
+ #belgiuminfo, #canadainfo, #englandinfo, #finlandinfo, #australiainfo, #hungaryinfo, #italyinfo, #japaninfo, #polandinfo, #africainfo { display:none;}
+
+ #moules, #poutine, #steak-and-kidney, #squeaky-cheese, #steak-pie, #goulash, #olives, #ramen, #chlodnik, #biltong { display:none;}
+
+
+
+.clear{clear:both;}
+ </style>
+  <script>
+        function TurnNavOnOff () {
+                        if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                            document.getElementById("navlinks").style.display = "none";
+                        }
+                        else {
+                            document.getElementById("navlinks").style.display = "block";
+                        }
+                    }
+function FoodOff () {
+    document.getElementById ('austriainfo').style.display= 'none';
+    document.getElementById ('belgiuminfo').style.display= 'none';
+    document.getElementById ('canadainfo').style.display= 'none';
+    document.getElementById ('englandinfo').style.display= 'none';
+    document.getElementById ('finlandinfo').style.display= 'none';
+    document.getElementById ('australiainfo').style.display= 'none';
+    document.getElementById ('hungaryinfo').style.display= 'none';
+    document.getElementById ('italyinfo').style.display= 'none';
+    document.getElementById ('japaninfo').style.display= 'none';
+    document.getElementById ('polandinfo').style.display= 'none';
+    document.getElementById ('africainfo').style.display= 'none';
+    document.getElementById ('apfelstrudle').style.display= 'none';
+    document.getElementById ('moules').style.display= 'none';
+    document.getElementById ('poutine').style.display= 'none';
+    document.getElementById ('steak-and-kidney').style.display= 'none';
+    document.getElementById ('squeaky-cheese').style.display= 'none';
+    document.getElementById ('steak-pie').style.display= 'none';
+    document.getElementById ('goulash').style.display= 'none';
+    document.getElementById ('olives').style.display= 'none';
+    document.getElementById ('ramen').style.display= 'none';
+    document.getElementById ('chlodnik').style.display= 'none';
+    document.getElementById ('biltong').style.display= 'none';
+ 
+}
+function AustriaOn () { 
+        document.getElementById('apfelstrudle').style.display='block';
+        document.getElementById('austriainfo').style.display='block';
+}
+function BelgiumOn () { 
+        document.getElementById('moules').style.display='block';
+        document.getElementById('belgiuminfo').style.display='block';
+}
+function CanadaOn () { 
+        document.getElementById('poutine').style.display='block';
+        document.getElementById('canadainfo').style.display='block';
+}
+function EnglandOn () { 
+        document.getElementById('steak-and-kidney').style.display='block';
+        document.getElementById('englandinfo').style.display='block';
+}
+function FinlandOn () { 
+        document.getElementById('squeaky-cheese').style.display='block';
+        document.getElementById('finlandinfo').style.display='block';
+}
+function AustraliaOn () { 
+        document.getElementById('steak-pie').style.display='block';
+        document.getElementById('australiainfo').style.display='block';
+}
+function HungaryOn () { 
+        document.getElementById('goulash').style.display='block';
+        document.getElementById('hungaryinfo').style.display='block';
+}
+function ItalyOn () { 
+        document.getElementById('olives').style.display='block';
+        document.getElementById('italyinfo').style.display='block';
+}
+function JapanOn () { 
+        document.getElementById('ramen').style.display='block';
+        document.getElementById('japaninfo').style.display='block';
+}
+function PolandOn () { 
+        document.getElementById('chlodnik').style.display='block';
+        document.getElementById('polandinfo').style.display='block';
+}
+function AfricaOn () { 
+        document.getElementById('biltong').style.display='block';
+        document.getElementById('africainfo').style.display='block';
+}   
+     </script> 
 </head>
 <body>
+
     <a id="skip" href= "#maincontent"> skip to content</a>
-    <nav>
-        <a href="../project/home.html">Home</a><span>|</span>
-        <a href="../project/places.html">Places</a>  <span>|</span>
-        <a href="../project/recomendations.html">Recomendations</a>
-    </nav>
-<h1>Must-Eat Foods From Around the World</h1>>
-<main>
-    <a id="maincontent"></a>
+ <nav>
 
-    <ol> 
-        <li>   Austria: Apfelstrudel. - Apfelstrudel or Viennese apple strudel is a close cousin to classic
-            American apple pie. Tart apple is paired with sweet pastry dough for a delicious combination.
-            Austrians love eating it with their afternoon coffee.</li>
-            <img src="../project/images/download.jpg" alt="Apfelstrudle">
-        <li>Belgium: Moules Frites- Mussels and fries are as common in Belgium as burgers and fries are in
-            the U.S. Try it the simple way by ordering plain, steamed mussels or with some extra flavor like
-            curry powder.</li>
-            <img src="../project/images/newmole.jpg" alt="Moules">
-        <BR>
-        <li> Canada: Poutine - Gravy, fries and cheese curds — what's not to love about poutine? Although this
-            savory concoction is available in the U.S., you should try it while visiting Canada. Some
-            restaurants have more than 100 variations to choose from, so there is something for everyone.
-           </li>
-           <img src="../project/images/poutin.jpg" alt= "Poutine"> 
+ <img src="https://laferger.github.io/ist263/images/hamburger.png" width="35" onclick="TurnNavOnOff();" id="hamicon">
+<div id="navlinks"> 
+     <a href="../project/home.html">Home</a><span>|</span>
+     <a href="../project/places.html">Places</a>  <span>|</span>
+     <a href="../project/recomendations.html">Recomendations</a>
+</div>
+</nav>
 
-           <BR>
-        <li>   England: Steak and Kidney Pie - steak and kidney pie can be made from lamb or pork kidneys.
-            Britons love the melt-in-your-mouth texture and savory flavor. A true delicacy especially if you’re
-            willing to pay for a homemade slice!</li>
-            <img src="../project/images/steak-and-guinness-pie.jpg" alt= "Steak and kidney"> 
+<main> <a id="maincontent"></a>
+    <h1>Must-Eat Foods From Around the World</h1>
+<div id= "slideshow-container"> 
+    <div id= "bigimages">
 
-            <BR>
-        <li>   
-            Finland: Leipäjuusto “Squeaky Cheese.” - It's unlikely you'll find Leipäjuusto or Finnish squeaky
-            cheese anywhere outside of Finland. The mild cheese is most commonly pan-fried and served with
-            cloudberry jam for dessert or alongside coffee.
-            </li>
-            <img src="../project/images/squeekycheese.jpg" alt= "squeaky cheese">    
-            <BR>
-        <li>    Australia: Meat Pie - Australians sure do love their meat pies — they consume millions of pies
-            annually, taking it on the go or enjoying it at a cafe. Eat it like locals do by topping it with warm or
-            chilled tomato sauce.</li>
-            <img src="../project/images/steakpie.jpg" alt= "steak pie"> 
+        <img src="../project/images/download.jpg" alt="apfelstrudle" id="apfelstrudle">
+        <img src="../project/images/newmole.jpg" alt="moules" id="moules">
+        <img src="../project/images/poutin.jpg" alt= "poutine" id="poutine"> 
+        <img src="../project/images/steak-and-guinness-pie.jpg" alt= "steak and kidney" id="steak-and-kidney"> 
+        <img src="../project/images/squeekycheese.jpg" alt= "squeaky cheese" id="squeaky-cheese"> 
+        <img src="../project/images/steakpie.jpg" alt= "steak pie" id="steak-pie"> 
+        <img src="../project/images/Beef-Goulash-Specialty-Beef-Goulash-3502510.jpg" alt= "goulash" id="goulash"> 
+        <img src="../project/images/olive.jpg" alt= "olives" id="olives"> 
+        <img src="../project/images/ramen.jpg" alt= "ramen" id="ramen"> 
+        <img src="../project/images/chlodnik.jpg" alt= "chlodnik" id="chlodnik">
+        <img src="../project/images/blit.jpg" alt= "biltong"id="biltong"> 
+    </div>
 
-            <BR>
-        <li>    
-        
-            Hungary: Goulash - Goulash literally translates to "Herdsman" in Hungarian because they
-            made the dish during cattle drives in harsh conditions. Although, the meaty stew didn't get
-            its rich red color until Turks invaded and introduced paprika to the country during the 16th
-            century. If you visit in September, check out the annual goulash festival held in Szolnok.
-            </li>
-            <img src="../project/images/Beef-Goulash-Specialty-Beef-Goulash-3502510.jpg" alt= "goulash"> 
-            <BR>
-        <li>    
-            Italy: Deep-Fried Olives- A Unique treat you should make sure you get in your tummy when in
-            Italy are deep-fried olives. The dish originated in the southern region in a town called Ascoli-
-            Piceno and has since spread north. You can choose a variety, like prosciutto-stuffed to ground-
-            beef-stuffed, from street vendors or local restaurants.
-            </li>
-            <img src="../project/images/olive.jpg" alt= "olives"> 
-            <BR>
-        <li>   
-            Japan: Ramen- Ramen noodles don't come out of a styrofoam cup in Japan. Japanese ramen
-            consists of Chinese-style noodles served in a meat broth flavored with soy sauce or miso. Each
-            region of Japan has its own variation, and toppings range from boiled egg to corn.
-           
-           </li>
-           <img src="../project/images/ramen.jpg" alt= "ramen"> 
-           <BR>
-        <li> Poland: Chlodnik- A summer staple, Polish chlodnik is a refreshing cold beet soup with a vibrant
-            pink color. It's flavored with cucumbers, radishes, plain yogurt and topped with hard-boiled eggs,
-            making it a truly healthy and delicious meal.
-            
-            </li>
-            <img src="../project/images/chlodnik.jpg" alt= "chlodnik"> 
-            <BR>
-        <li>
+<div id="foodinfo">
 
-            South Africa: Biltong -Biltong is made from a variety of spiced, dried and cured meat, including
-            beef and ostrich. It's usually eaten as a snack and tastes like a saltier version of beef jerky. Many
-            locals dice the meat strips and add them to stews or muffins. You can also find biltong-flavored
-            cheese spreads and potato chips in the country. </li>
-            <img src="../project/images/blit.jpg" alt= "Biltong"> 
-       
-    </ol>
+<div id= "austriainfo"> 
+<h2>Austria's Apfelstrudel</h2>
+<p>
+     Try Apfelstrudel! Apfelstrudel or Viennese apple strudel is a close cousin to classic American apple pie. Tart apple is paired with sweet pastry dough for a delicious combination.  This sweet treat consists of thin layers of dough filled with a flavorful apple filling. The oldest known recipe for strudel dates back to 1696, while other varieties, such as the apple strudel recipe, date back to the 1800s. Some claim that the dish was invented in Vienna for the Emperor of Austria and the rest of high society. Depending on the recipe, the filling may additionally include raisins, cinnamon, rum, and nuts such as almonds or walnuts. Austrians love eating it with their afternoon coffee.</p>
+</div>
+<div id="belgiuminfo">
+<h2>Belgium's Moules Frites</h2>
+<p>
+    oules-Frites or Moules et Frites is the national dish of Belgium. Mussels and fries are as common in  Belgium as burgers and fries are in the U.S.! The dish originated in Belgium, it is said that the combo was originally created by combining mussels, a popular and cheap eaten around the Flemish coast, and fried potatoes which were commonly eaten around the country in winter when no fish or other food was available. In Belgium restaurants, you can find a great variety of steamed mussels: with cream, with beer, with tomato or with exotic spices. However, the most traditional is also the simplest: those cooked with shallots, white wine and herbs.</p>
+</div>
+
+<div id= "canadainfo"> 
+<h2>Canada's Poutine</h2>
+<p>
+   What's not to love about poutine? It is Gravy, fries and cheese curds — a truly
+    savory concoction! If that doesn't sound speical to you don't worry, restaurants have more than 100 variations to choose from, so there is something for everyone. Poutine emerged in Quebec, Canada, in the late 1950s in the Centre-du-Québec region, though its origins are uncertain and there are several competing claims of having invented the now very popular dish. If you love this dish as much as we do, be sure to go to the Annual poutine celebrations that occur in Montreal, Quebec City, and Drummondville! 
+</p>
+</div>
+
+<div id= "englandinfo"> 
+    <h2> England's Steak and kidney pie </h2>
+    <p>
+     Don't worry, Kidneys taste better than they sound! Steak and kidney pie is a fan favorite in England. It can be made from lamb or pork kidneys. Britons love the melt-in-your-mouth texture and savory flavor. A true delicacy especially if you’re  willing to pay for a homemade slice!
+    </p>
+</div>
+
+<div id= "finlandinfo"> 
+    <h2>Finland's Leipäjuusto</h2>
+    <p>
+     Finland is known for their Leipäjuusto-- better known as “Squeaky Cheese!” It is unlikely you'll find Leipäjuusto or Finnish squeaky
+     cheese anywhere outside of Finland. The mild cheese is most commonly pan-fried and served with cloudberry jam for dessert or alongside coffee.
+    </p>
+</div>
+
+<div id= "australiainfo"> 
+    <h2> Australia's Meat Pie </h2>
+    <p>
+     Get yourself some Meat Pie! - Australians sure do love their meat pies — they consume millions of pies annually, taking it on the go or enjoying it at a cafe. Eat it like locals do by topping it with warm or chilled tomato sauce.
+    
+    </p>
+</div>
+
+<div id= "hungaryinfo"> 
+    <h2>Hungary's Goulash</h2>
+    <p>
+        Hungary is known for their Goulash - Goulash literally translates to "Herdsman" in Hungarian because they made the dish during cattle drives in harsh conditions. Although, the meaty stew didn't get
+        its rich red color until Turks invaded and introduced paprika to the country during the 16th century. If you visit in September, check out the annual goulash festival held in Szolnok.
+    </p>
+</div>
+<div id= "italyinfo"> 
+    <h2> Italy's Deep-Fried Olives</h2>
+    <p>
+         A Unique treat you should make sure you get in your tummy when in Italy are deep-fried olives. The dish originated in the southern region in a town called Ascoli- Piceno and has since spread north. You can choose a variety, like prosciutto-stuffed to ground-   beef-stuffed, from street vendors or local restaurants.
+    </p>
+</div>
+<div id= "japaninfo"> 
+    <h2>Japan's Ramen </h2>
+    <p>
+      Ramen noodles don't come out of a styrofoam cup in Japan. Japanese ramen consists of Chinese-style noodles served in a meat broth flavored with soy sauce or miso. Each region of Japan has its own variation, and toppings range from boiled egg to corn.
+    </p>
+</div>
+<div id= "polandinfo"> 
+    <h2> Poland's Chlodnik</h2>
+    <p>
+        Chlodnik is a summer staple! Polish chlodnik is a refreshing cold beet soup with a vibrant pink color. It's flavored with cucumbers, radishes, plain yogurt and topped with hard-boiled eggs,
+        making it a truly healthy and delicious meal.
+    </p>
+</div>
+<div id= "africainfo"> 
+    <h2>South Africa's Biltong</h2>
+    <p>
+    Biltong is made from a variety of spiced, dried and cured meat, including beef and ostrich. It's usually eaten as a snack and tastes like a saltier version of beef jerky. Many locals dice the meat strips and add them to stews or muffins. You can also find biltong-flavored cheese spreads and potato chips in the country.
+    </p>
+</div>
+</div> 
+
+
+<div class="clear"> </div>
+
+<div id="thumbnails">
+<img src= "../project/images/austriaflag.png" alt="austria" id="austriathumb" onclick="FoodOff(); AustriaOn ();">
+<img src= "../project/images/belgiumflag.png" alt="belgium" id="belgiumthumb"onclick="FoodOff (); BelgiumOn ();">
+<img src= "../project/images/canadaflag.png" alt="canada" id="canadathumb" onclick="FoodOff(); CanadaOn ();">
+<img src= "../project/images/englandflag.png" alt="england" id="englandthumb"onclick="FoodOff(); EnglandOn ();">
+<img src= "../project/images/finlandflag.png" alt="finland" id="finlandthumb"onclick="FoodOff (); FinlandOn ();">
+<img src= "../project/images/australiaflag.png" alt="australia" id="australiathumb" onclick="FoodOff (); AustraliaOn ();">
+<img src= "../project/images/hungryflag.png" alt="hungary" id="hungarythumb" onclick="FoodOff();HungaryOn ();">
+<img src= "../project/images/italyflag.png" alt="italy" id="italythumb" onclick="FoodOff();ItalyOn ();">
+<img src= "../project/images/japanflag.png" alt= "japan" id="japanthumb" onclick="FoodOff(); ItalyOn();">
+<img src= "../project/images/polandflag.png" alt="poland" id="polandthumb" onclick="FoodOff(); PolandOn();">
+<img src= "../project/images/africaflag.png" alt="africa" id="africathumb" onclick="FoodOff(); AfricaOn();">
+</div>
+
+</div> 
+     
     </main>
  
 
 
     
     <footer>  
+        <br>
         <div class="copyright">
-          &copy; 2020 </div> 
+          &copy; 2021 </div> 
 
          <div class= "quote">
           “All you need is love. But a little chocolate now and then doesn't hurt.”

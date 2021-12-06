@@ -6,17 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culinary exploration</title>
     <link rel="stylesheet" href="../project/styles.css">
+    <script>
+        function TurnNavOnOff () {
+                        if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                            document.getElementById("navlinks").style.display = "none";
+                        }
+                        else {
+                            document.getElementById("navlinks").style.display = "block";
+                        }
+                    }
+        
+         </script> 
 </head>
 <body>
     <a id="skip" href= "#maincontent"> skip to content</a>
-    <nav>
-        <a href="../project/home.html">Home</a>  <span>|</span>
-        <a href="../project/places.html">Places</a>  <span>|</span>
-        <a href="../project/recomendations.html">Recomendations</a>
-    </nav>
+<nav>
+<img src="https://laferger.github.io/ist263/images/hamburger.png" width="35" onclick="TurnNavOnOff();" id="hamicon">
+<div id="navlinks"> 
+            <a href="../project/home.html">Home</a><span>|</span>
+            <a href="../project/places.html">Places</a>  <span>|</span>
+            <a href="../project/recomendations.html">Recomendations</a>
+</div>
+</nav>
     <h1>Our Resturant Recomendations</h1>
 
 <main>
+
 <a id="maincontent"></a>
     <h2>Café Eiles</h2>  
     <div class= "cafe eiles"> 

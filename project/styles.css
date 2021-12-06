@@ -60,19 +60,9 @@ h1,h2, h3 {
 
 }
 .self {
-float: center;margin-left: 10px;
+float:right;
 }
 
-.dishes { max-width: 60%;}
-.tomatoe {max-width: 60%;}
-.women {max-width: 60%;}
-.row { display:flex;
-        justify-content:center;
-        border-radius: 2em;}
-        .cafe eiles {
-            display:flex;
-            justify-content: center;
-        }
 
 
 .quote {text-align:center;}
@@ -90,3 +80,16 @@ float: center;margin-left: 10px;
     left:10px;
   color: #272343;}
   .copyright {float:lefts; margin-left: 10px}
+
+
+  #hamicon {display: none;}
+  nav a:hover {background-color: lightseagreen;}
+  @media only screen and (max-width: 900px) {
+      span {display: none;}
+      #hamicon {display: block;}
+      nav a {
+          display: block;
+          padding: 10px 0px;
+          }
+      #navlinks {display: none;}
+  }
