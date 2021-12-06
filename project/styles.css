@@ -35,6 +35,7 @@ h1,h2, h3 {
     color: #272343;
     text-align: center; 
 }
+.dinnertable {max-width:100%;}
 .banner {
     max-width: 100%;
     display:flex;
@@ -63,6 +64,7 @@ h1,h2, h3 {
 .self {
 float:right;
 }
+
 
 
 
