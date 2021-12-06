@@ -50,6 +50,7 @@ h1,h2, h3 {
         border-radius: 2em;
     }
 
+ #tomatoes { max-width: 100%; }
 .bio {
     color: #272343;
     background-color:#bae8e8;;
@@ -85,6 +86,7 @@ float:right;
 
   #hamicon {display: none;}
   nav a:hover {background-color: lightseagreen;}
+  
   @media only screen and (max-width: 900px) {
       span {display: none;}
       #hamicon {display: block; margin: 20 px;}
