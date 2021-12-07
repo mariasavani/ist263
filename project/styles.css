@@ -90,7 +90,7 @@ h1,h2, h3 {
 float:right;
 max-width: 100%;
 padding:20px;
-clear:clear;
+
 
 }
 
@@ -123,6 +123,7 @@ clear:clear;
     .title {max-width:100%;}
     nav a{ display:block; margin-bottom: 20px;}
      span {display: none;}
+
      .introfood, .bio {
              padding-left: 20px;
             padding-right:20px;}
