@@ -33,9 +33,9 @@ slideshow-container{ width: 1200px;
             padding-right:30px;
             margin:auto;}
 
-#thumbnails { margin: auto; padding-top:100px; padding-bottom: 100px ; display:flex; justify-content: space-between;}
+#thumbnails { margin: auto; padding-top:50px; padding-bottom: 100px ; display:flex; justify-content: space-between;}
 
-#austriathumb, #belgiumthumb, #canadathumb, #englandthumb, #finlandthumb, #australiathumb, #hungarythumb, #italythumb, #japanthumb, #polandthumb, #africathumb { max-width:100%;} 
+#austriathumb, #belgiumthumb, #canadathumb, #englandthumb, #finlandthumb, #australiathumb, #hungarythumb, #italythumb, #japanthumb, #polandthumb, #africathumb { max-width:100%;cursor:pointer;} 
 
  #belgiuminfo, #canadainfo, #englandinfo, #finlandinfo, #australiainfo, #hungaryinfo, #italyinfo, #japaninfo, #polandinfo, #africainfo { display:none;}
 
@@ -43,10 +43,11 @@ slideshow-container{ width: 1200px;
 
  @media only screen and (max-width: 900px) {
   
-  #thumbnails{display: block; margin: 20px;}
+  #thumbnails{display: block; margin: 20px; }
 
           }
-
+.message {display: flex;
+        justify-content: center;}
 .clear{clear:both;}
  </style>
   <script>
@@ -127,6 +128,7 @@ function AfricaOn () {
         document.getElementById('biltong').style.display='block';
         document.getElementById('africainfo').style.display='block';
 }   
+document.getElementById("rollover").setAttribute( )
      </script> 
 </head>
 <body>
@@ -144,7 +146,22 @@ function AfricaOn () {
 
 <main> <a id="maincontent"></a>
     <h1>Must-Eat Foods From Around the World</h1>
-    <br>
+ <div class="message"> (Click flags to see more) </div>
+
+<div id="thumbnails">
+    <img src= "../project/images/austriaflag.png" alt="austria" id="austriathumb" onclick="FoodOff(); AustriaOn ();">
+    <img src= "../project/images/belgiumflag.png" alt="belgium" id="belgiumthumb"onclick="FoodOff (); BelgiumOn ();">
+    <img src= "../project/images/canadaflag.png" alt="canada" id="canadathumb" onclick="FoodOff(); CanadaOn ();">
+    <img src= "../project/images/englandflag.png" alt="england" id="englandthumb"onclick="FoodOff(); EnglandOn ();">
+    <img src= "../project/images/finlandflag.png" alt="finland" id="finlandthumb"onclick="FoodOff (); FinlandOn ();">
+    <img src= "../project/images/australiaflag.png" alt="australia" id="australiathumb" onclick="FoodOff (); AustraliaOn ();">
+    <img src= "../project/images/hungryflag.png" alt="hungary" id="hungarythumb" onclick="FoodOff();HungaryOn ();">
+    <img src= "../project/images/italyflag.png" alt="italy" id="italythumb" onclick="FoodOff();ItalyOn ();">
+    <img src= "../project/images/japanflag.png" alt= "japan" id="japanthumb" onclick="FoodOff(); JapanOn();">
+    <img src= "../project/images/polandflag.png" alt="poland" id="polandthumb" onclick="FoodOff(); PolandOn();">
+    <img src= "../project/images/africaflag.png" alt="africa" id="africathumb" onclick="FoodOff(); AfricaOn();">
+    
+    </div>
 <div id= "slideshow-container"> 
     <br>
     <div id= "bigimages">
@@ -241,20 +258,6 @@ function AfricaOn () {
 
 
 <div class="clear"> </div>
-
-<div id="thumbnails">
-<img src= "../project/images/austriaflag.png" alt="austria" id="austriathumb" onclick="FoodOff(); AustriaOn ();">
-<img src= "../project/images/belgiumflag.png" alt="belgium" id="belgiumthumb"onclick="FoodOff (); BelgiumOn ();">
-<img src= "../project/images/canadaflag.png" alt="canada" id="canadathumb" onclick="FoodOff(); CanadaOn ();">
-<img src= "../project/images/englandflag.png" alt="england" id="englandthumb"onclick="FoodOff(); EnglandOn ();">
-<img src= "../project/images/finlandflag.png" alt="finland" id="finlandthumb"onclick="FoodOff (); FinlandOn ();">
-<img src= "../project/images/australiaflag.png" alt="australia" id="australiathumb" onclick="FoodOff (); AustraliaOn ();">
-<img src= "../project/images/hungryflag.png" alt="hungary" id="hungarythumb" onclick="FoodOff();HungaryOn ();">
-<img src= "../project/images/italyflag.png" alt="italy" id="italythumb" onclick="FoodOff();ItalyOn ();">
-<img src= "../project/images/japanflag.png" alt= "japan" id="japanthumb" onclick="FoodOff(); JapanOn();">
-<img src= "../project/images/polandflag.png" alt="poland" id="polandthumb" onclick="FoodOff(); PolandOn();">
-<img src= "../project/images/africaflag.png" alt="africa" id="africathumb" onclick="FoodOff(); AfricaOn();">
-</div>
 
 </div> 
      
