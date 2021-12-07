@@ -49,26 +49,38 @@ h1,h2, h3 {
 }
 .introfood   {
         color: #272343;
+        border:3px #272343;
+        padding-bottom:200px;
+        padding-top: 100px;
+        padding-right: 70px;
+        padding-left: 100px;
         background-color:#bae8e8;;
-        border:3px solid #272343;
-        padding:15px; 
-        margin: 10px;
-        border-radius: 2em;
-    }
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;}
 
- .tomato {max-width: 100%;}
+ .tomato {max-width: 100%;
+            }
 .bio {
-    color: #272343;
-    background-color:#bae8e8;;
-    border:3px solid #272343;
-    padding:15px; 
-    margin: 10px;
-    border-radius: 2em;
+         color: #272343;
+        border:3px #272343;
+        padding-bottom:200px;
+        padding-top: 100px;
+        padding-right: 100px;
+        padding-left: 100px;
+        background-color:#bae8e8;;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
 
 }
 .self {
 float:right;
 max-width: 100%;
+padding:20px;
+
 }
 
 
