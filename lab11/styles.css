@@ -46,7 +46,8 @@ nav a:hover{color:black;
      { 
 
  nav a{ display:block; margin-bottom: 20px;}
-    span {display: none;}
+    
+ span {display: none;}
      }
 
      #skip {
