@@ -23,6 +23,7 @@ slideshow-container{ width: 1200px;
 #foodinfo { padding-left: 100px;
             padding-right:30px;
             margin:auto;}
+
 a:hover {
    max-zoom: 300%;
   text-decoration: underline;}
@@ -33,7 +34,20 @@ a:hover {
  #belgiuminfo, #canadainfo, #englandinfo, #finlandinfo, #australiainfo, #hungaryinfo, #italyinfo, #japaninfo, #polandinfo, #africainfo { display:none;}
 
  #moules, #poutine, #steak-and-kidney, #squeaky-cheese, #steak-pie, #goulash, #olives, #ramen, #chlodnik, #biltong { max-width: 100%;  ; display:none;}
+.message{ 
+    display: flex;
+    justify-content:space-evenly;
+    color:#e3f6f5;
+    width: 200px;
+  height: 10px;
+  animation-name: example;
+  animation-duration: 8s;
+}
 
+@keyframes example {
+  from {background-color: #272343;}
+  to {background-color: #e3f6f5;}
+}
  #hamicon {display: none;}
   nav a:hover {background-color: lightseagreen;}
 
@@ -46,8 +60,7 @@ a:hover {
     #moules, #poutine, #steak-and-kidney, #squeaky-cheese, #steak-pie, #goulash, #olives, #ramen, #chlodnik, #biltong { max-width: 100%;  ; display:none;}
  }
 
-.message {display: flex;
-        justify-content: center;}
+    
 .clear{clear:both;}
  </style>
   <script>
@@ -146,7 +159,7 @@ document.getElementById("rollover").setAttribute( )
 
 <main> <a id="maincontent"></a>
     <h1>Must-Eat Foods From Around the World</h1>
- <div class="message"> (Click flags to see more) </div>
+ <div class="message"> Click flags to browse! </div>
 
 <div id="thumbnails">
     <img src= "../project/images/austriaflag.png" alt="austria" id="austriathumb" onclick="FoodOff(); AustriaOn ();">
