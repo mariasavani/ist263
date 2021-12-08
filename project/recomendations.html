@@ -28,7 +28,13 @@ a:link {
  #austriainfo{margin:auto;max-width: 100%;}
  #apfelstrudel{margin:auto;max-width: 100%;}
  #moules, #poutine, #steak-and-kidney, #squeaky-cheese, #steak-pie, #goulash, #olives, #ramen, #chlodnik, #biltong {max-width: 100%; display:none;}
- iframe {max-width: 100%; }
+
+ @media only screen and (max-width: 900px) {
+
+  #thumbnails{display: block; margin: 20px;}      
+}
+img {max-width:100%;}
+iframe {max-width: 100%; }
 .clear{clear:both;}
 .message {display: flex;
         justify-content: center;
@@ -44,15 +50,6 @@ a:link {
 @keyframes example {
   from {background-color: #272343;}
   to {background-color: #e3f6f5;}}
- @media only screen and (max-width: 900px) {
-    span {display: none;}
-    #hamicon {display: block;}
-    nav a { display: block; padding: 10px 0px;}
-    #navlinks {display: none;}
-  #thumbnails{display: block; margin: 20px;}
-
- }
-
     </style>
     <script>
         function TurnNavOnOff () {
